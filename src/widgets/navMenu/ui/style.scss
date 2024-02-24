@@ -1,0 +1,52 @@
+@import '@shared/styles/index';
+
+.nav-menu {
+  background-color: $c-white;
+  position: fixed;
+  top: -100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 3.3rem 0 0 2.5rem;
+  transition: all 0.3s ease 0s;
+  &.active {
+    top: 0;
+  }
+  &__list {
+    margin-top: 6rem;
+  }
+  &__item {
+    margin-bottom: 2.5rem;
+    a {
+      font-family: $f-quicksand;
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 0.01rem;
+      text-transform: capitalize;
+      color: $c-black;
+      &:hover {
+        font-weight: 700;
+      }
+    }
+  }
+  &__message-btn {
+    width: 34rem;
+    height: 4.4rem;
+  }
+}
+
+@media screen and (width: 1440px) {
+  .nav-menu {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 5rem;
+    padding: 0;
+    &__list {
+      margin-top: 0;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
