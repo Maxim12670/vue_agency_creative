@@ -1,0 +1,33 @@
+/*   Font variables   */
+$font-post-fix: -apple-system, blinkmacsystemfont, segoe ui, roboto, oxygen-sans, ubuntu, cantarell, helvetica neue, sans-serif;
+$f-quicksand: 'Quicksand', $font-post-fix;
+$f-nunito: 'Nunito', $font-post-fix;
+
+/* ui-step */
+$step: 4;
+
+/*   Color variables   */
+$c-white: #FFF;
+$c-black: #1D1D1D;
+$c-gray: rgb(70, 70, 70);
+$c-dark-gray: rgb(56, 54, 56);
+$c-blue: rgb(55, 125, 255);
+$c-blue-light: rgb(55, 219, 255);
+$c-red: #FF3B30;
+$c-green: #39E8A5;
+
+
+/*  BREAKPOINTS */
+$br-mobile: 390;
+$br-tablet: 768;
+$br-desktop: 1440;
+$br-desktop-max: 1920;
+
+
+/* ui-index */
+$ui-index-1: 1; // Для наползающих элементов в общем потоке
+$ui-index-2: 2; // Для наползающих элементов в общем потоке
+$ui-index-3: 3; // Для масок
+$ui-index-4: 4; // Для садбаров
+$ui-index-5: 5; // Для модалок
+$ui-index-6: 7000; // Для элементов, перекрывающих все

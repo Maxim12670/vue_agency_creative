@@ -1,0 +1,34 @@
+@import "src/shared/styles";
+
+html {
+  font-size: calc(100vw / $br-mobile * 10);
+
+  @include br-tablet {
+    font-size: calc(100vw / $br-tablet * 10);
+  }
+
+  @include br-desktop {
+    font-size: calc(100vw / $br-desktop * 10);
+  }
+
+  @include br-desktop-max {
+    font-size: 10px
+  }
+}
+
+body {
+  font-weight: 400;
+  font-family: $f-quicksand;
+  line-height: 120%;
+  padding-top: 3.3rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  font-family: $f-quicksand;
+}
