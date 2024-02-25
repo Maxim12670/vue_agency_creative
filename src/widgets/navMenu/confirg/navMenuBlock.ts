@@ -1,23 +1,38 @@
 interface MenuItem {
-  text: string;
+  text: {
+    en: string,
+    ru: string
+  };
   path: string;
 }
 
 export const links: MenuItem[] = [
   {
-    text: 'Home',
+    text: {
+      en: 'home',
+      ru: 'главная'
+    },
     path: '/'
   },
   {
-    text: 'About',
+    text: {
+      en: 'About',
+      ru: 'о нас'
+    },
     path: '/'
   },
   {
-    text: 'Sevices',
+    text: {
+      en: 'Sevices',
+      ru: 'услуги'
+    },
     path: '/'
   },
   {
-    text: 'Projects',
+    text: {
+      en: 'Projects',
+      ru: 'проекты'
+    },
     path: '/'
   }
 ];

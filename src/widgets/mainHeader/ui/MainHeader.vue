@@ -2,7 +2,7 @@
   <content-container>
     <header class="header">
       <router-link to="/">
-        <img class="header__logo" src="../../../shared/assets/icons/logo.svg" alt="logo">
+        <img class="header__logo" src="@shared/assets/icons/logo.svg" alt="logo">
       </router-link>
       <NavMenu class="header__nav-menu" :isActive="isActive"/>
       <div class="header__burger" @click="isActive = !isActive">
