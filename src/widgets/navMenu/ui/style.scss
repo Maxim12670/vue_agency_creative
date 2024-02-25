@@ -19,7 +19,7 @@
     margin-bottom: 2.5rem;
     a {
       font-family: $f-quicksand;
-      font-size: 18px;
+      font-size: 1.8rem;
       font-weight: 400;
       letter-spacing: 0.01rem;
       text-transform: capitalize;
@@ -29,9 +29,19 @@
       }
     }
   }
+  &__lang-btn {
+    margin-top: 2.5rem;
+  }
   &__message-btn {
     width: 34rem;
     height: 4.4rem;
+    margin-top: 11.5rem;
+  }
+  &__social-btn {
+    margin-top: 18.9rem;
+    display: flex;
+    justify-content: center;
+
   }
 }
 
@@ -45,8 +55,38 @@
     padding: 0;
     &__list {
       margin-top: 0;
+      margin-right: 31.7rem;
+      width: 385px;
+      height: auto;
       display: flex;
+      align-items: center;
+      justify-content: space-between;
       flex-direction: row;
+    }
+    &__item {
+      margin-bottom: 0;
+      a {
+        font-family: $f-quicksand;
+        font-size: 1.8rem;
+      }
+    }
+    &__lang-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0;
+      margin-right: 8rem;
+      
+    }
+    &__message-btn {
+      display: flex;
+      align-items: center;
+      width: 18.5rem;
+      height: 4.8rem;
+      margin-top: 0;
+    }
+    &__social-btn {
+      display: none;
     }
   }
 }

@@ -21,3 +21,10 @@
 input[type="radio"]:checked + label {
   font-weight: 700;
 }
+
+@media screen and (width: 1440px) {
+  .lang {
+    width: 5.7rem;
+    height: 2.4rem;
+  }
+}

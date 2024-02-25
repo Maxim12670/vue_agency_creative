@@ -33,5 +33,5 @@ const vueQueryPluginOptions: VueQueryPluginOptions = {
   }
 }
 export default boot(({ app }) => {
-  app.use(i18n).use(VueQueryPlugin, vueQueryPluginOptions);
+  app.use(VueQueryPlugin, vueQueryPluginOptions).use(i18n)
 })

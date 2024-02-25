@@ -6,7 +6,7 @@
       </li>
     </ul>
     <div class="nav-menu__lang-btn">
-      <button>Lang</button>
+      <ButtonLang/>
     </div>
     <div class="nav-menu__message-btn">
       <MyButton class="btn_fz16" text="Contact us"/>
@@ -18,15 +18,14 @@
 </template>
 
 <script setup lang="ts">
-import i18n from '@app/boot/tanStack';
 import './style.scss';
 import { defineProps } from 'vue';
 import { links } from '../confirg/navMenuBlock';
 import { SocialNav } from '@widgets/socialNav/index';
+import { ButtonLang } from '@widgets/buttonLang/index';
 import { MyButton } from '@shared/ui';
 
 const props = defineProps<{
   isActive: boolean
 }>();
-
 </script>
