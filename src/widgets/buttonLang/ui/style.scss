@@ -1,0 +1,23 @@
+@import '@shared/styles/index';
+
+.lang {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 6.5rem;
+  height: 2.4rem;
+  &__label {
+    color: $c-black;
+    font-family: $f-quicksand;
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 0.01rem;
+  }
+  &__input {
+    display: none;
+  }
+}
+
+input[type="radio"]:checked + label {
+  font-weight: 700;
+}
