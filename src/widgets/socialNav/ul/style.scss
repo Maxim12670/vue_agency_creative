@@ -1,0 +1,29 @@
+@import '@shared/styles/index';
+
+.social {
+  width: 28rem;
+  height: 3.6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  &__link {
+    display: flex;
+    justify-content: center;
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  &__logo {
+    max-width: 2rem;
+    height: 100%;
+    fill: black;
+    stroke: $c-black;
+    &:hover{
+      fill: $c-blue-light;
+      stroke: $c-blue-light;
+    }
+  }
+}
