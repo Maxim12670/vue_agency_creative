@@ -1,8 +1,8 @@
 <template>
   <div class="nav-menu" :class="{ active: props.isActive }">
     <ul class="nav-menu__list">
-      <li v-for="link in links" v-bind:key="link.path" class="nav-menu__item">
-        <a :href="link.path">{{ link.text.en }}</a>
+      <li v-for="link in links" :key="link.path" class="nav-menu__item">
+        <a :href="link.path">{{ $t(link.textLocaleKey) }}</a>
       </li>
     </ul>
     <div class="nav-menu__lang-btn">
@@ -19,13 +19,29 @@
 
 <script setup lang="ts">
 import './style.scss';
-import { defineProps } from 'vue';
-import { links } from '../confirg/navMenuBlock';
-import { SocialNav } from '@widgets/socialNav/index';
 import { ButtonLang } from '@widgets/buttonLang/index';
-import { MyButton } from '@shared/ui';
+import { MyButton, SocialNav } from '@shared/ui';
 
 const props = defineProps<{
   isActive: boolean
 }>();
+
+const links = ([
+  {
+    textLocaleKey: 'navMenu.home',
+    path: '/'
+  },
+  {
+    textLocaleKey: 'navMenu.about',
+    path: '/'
+  },
+  {
+    textLocaleKey: 'navMenu.services',
+    path: '/'
+  },
+  {
+    textLocaleKey: 'navMenu.projects',
+    path: '/'
+  }
+])
 </script>
