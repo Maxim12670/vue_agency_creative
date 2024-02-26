@@ -11,11 +11,13 @@
 <script setup lang="ts">
 import './style.scss'
 import { ref, watch } from 'vue'
-// import i18n from '@app/boot/tanStack'
+import { useI18n } from 'vue-i18n'
 
-const selectedLanguage = ref('en');
+const { locale } = useI18n({ useScope: 'global' });
+
+const selectedLanguage = ref(locale);
 
 watch(selectedLanguage, (newValue) => {
-  // i18n.locale = newValue;
+  $i18n.global.locale = newValue;
 });
 </script>

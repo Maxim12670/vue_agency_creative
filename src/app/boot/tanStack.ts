@@ -6,6 +6,7 @@ import ruMessages from './locales/ru.json'
 
 const i18n = createI18n({
   locale: 'en',
+  legacy: false,
   fallbackLocale: 'en',
   messages: {
     en: enMessages,
@@ -35,3 +36,4 @@ const vueQueryPluginOptions: VueQueryPluginOptions = {
 export default boot(({ app }) => {
   app.use(VueQueryPlugin, vueQueryPluginOptions).use(i18n)
 })
+
