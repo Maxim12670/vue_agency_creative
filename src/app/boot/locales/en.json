@@ -1,8 +1,26 @@
 {
+  "btn" : {
+    "contact": "Contact us",
+    "start": "Start Project",
+    "sendMes": "Send message"
+  },
   "navMenu": {
     "home": "Home",
     "about": "About",
     "services": "Services",
     "projects": "Projects"
+  },
+  "helper": {
+    "title": "Make your dream business goal come true",
+    "text": "when you need us for improve your business, then come with us to help your business have reach it, you just sit and feel that goal.",
+    "btn": "Start Project"
+  },
+  "about-us": {
+    "subtitle": "About Us",
+    "title": "Our Teammate",
+    "textFirst": "We move with make a Creative Strategy for help your business goal, we help to improve your income by a services we have. make your content look interesting and make people look for your business2.",
+    "textSecond": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu neque tempor at ut auctor maecenas,Lorem ipsum d.",
+    "btnFirst": "About Us",
+    "btnSecond": "About Us"
   }
 }
