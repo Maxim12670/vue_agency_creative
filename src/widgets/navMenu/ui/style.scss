@@ -7,19 +7,19 @@
   left: 0;
   height: 100%;
   width: 100%;
-  padding: 3.3rem 0 0 2.5rem;
+  padding: rem(33) 0 0 rem(25);
   transition: all 0.3s ease 0s;
   &.active {
     top: 0;
   }
   &__list {
-    margin-top: 6rem;
+    margin-top: rem(60);
   }
   &__item {
-    margin-bottom: 2.5rem;
+    margin-bottom: rem(25);
     a {
       font-family: $f-quicksand;
-      font-size: 1.8rem;
+      font-size: rem(18);
       font-weight: 400;
       letter-spacing: 0.01rem;
       text-transform: capitalize;
@@ -30,33 +30,33 @@
     }
   }
   &__lang-btn {
-    margin-top: 2.5rem;
+    padding-top: rem(25);
   }
   &__message-btn {
-    width: 34rem;
-    height: 4.4rem;
-    margin-top: 11.5rem;
+    width: rem(340);
+    height: rem(44);
+    margin-top: rem(115);
   }
   &__social-btn {
-    margin-top: 18.9rem;
+    margin-top: rem(189);
     display: flex;
     justify-content: center;
 
   }
 }
 
-@media screen and (width: 1440px) {
+@media screen and (min-width: 1440px) {
   .nav-menu {
     position: static;
     display: flex;
     flex-direction: row;
     width: auto;
-    height: 5rem;
+    height: rem(50);
     padding: 0;
     &__list {
       margin-top: 0;
-      margin-right: 31.7rem;
-      width: 385px;
+      margin-right: rem(317);
+      width: rem(385);
       height: auto;
       display: flex;
       align-items: center;
@@ -67,22 +67,22 @@
       margin-bottom: 0;
       a {
         font-family: $f-quicksand;
-        font-size: 1.8rem;
+        font-size: rem(18);
       }
     }
     &__lang-btn {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 0;
-      margin-right: 8rem;
+      padding-top: 0;
+      margin-right: rem(80);
       
     }
     &__message-btn {
       display: flex;
       align-items: center;
-      width: 18.5rem;
-      height: 4.8rem;
+      width: rem(185);
+      height: rem(48);
       margin-top: 0;
     }
     &__social-btn {

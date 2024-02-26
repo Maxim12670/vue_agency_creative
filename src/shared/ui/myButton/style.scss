@@ -7,13 +7,13 @@
   align-items: center;
   justify-content: center;
   font-family: $f-quicksand;
-  font-size: 2rem;
+  font-size: rem(2);
   font-weight: 700;
   letter-spacing: 0.01rem;
   color: $c-blue;
   background-color: $c-white;
   svg {
-    margin-left: 1.6rem;
+    margin-left: rem(16);
   }
   &:hover {
     color: $c-blue-light;
@@ -29,15 +29,15 @@
   background-color: $c-white;
   color: $c-blue;
   font-family: $f-quicksand;
-  font-size: 1.2rem;
+  font-size: rem(12);
   font-weight: 700;
   letter-spacing: 0.01rem;
   &_fz16 {
-    font-size: 1.6rem;
+    font-size: rem(16);
   }
   &__primary {
     border: 0.1rem solid $c-blue;
-    border-radius: 2.4rem;
+    border-radius: rem(24);
     &:hover {
       border: 1px solid $c-blue-light;
       color: $c-blue-light;
@@ -45,7 +45,7 @@
   }
   &__shared {
     background-color: $c-blue;
-    box-shadow: 0px 4px 8px 0px rgba(55, 125, 255, 0.5);
+    box-shadow: 0 rem(4) rem(8) 0 rgba(55, 125, 255, 0.5);
     color: $c-white;
     &:hover {
       background-color: $c-blue-light;
