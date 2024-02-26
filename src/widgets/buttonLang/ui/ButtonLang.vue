@@ -1,10 +1,9 @@
 <template>
   <div class="lang">
-    <input class="lang__input" v-model="selectedLanguage" type="radio" name="lang" value="en" id="en">
-    <label class="lang__label" for="en">EN</label>
-    <input class="lang__input" v-model="selectedLanguage" type="radio" name="lang" value="ru" id="ru">
-    <label class="lang__label" for="ru">RU</label>
-
+    <div v-for="item in languages" :key="item.lang">
+      <input class="lang__input" v-model="selectedLanguage" type="radio" name="lang" :value="item.lang" :id="item.lang">
+      <label class="lang__label" :for="item.lang">{{ item.lang }}</label>
+    </div>
   </div>
 </template>
 
@@ -13,8 +12,16 @@ import './style.scss'
 import { ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-const { locale } = useI18n({ useScope: 'global' });
+const languages = [
+  {
+    lang: 'en'
+  },
+  {
+    lang: 'ru'
+  }
+]
 
+const { locale } = useI18n({ useScope: 'global' });
 const selectedLanguage = ref(locale);
 
 watch(selectedLanguage, (newValue) => {
