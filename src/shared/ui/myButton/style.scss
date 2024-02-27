@@ -12,13 +12,14 @@
   letter-spacing: 0.01rem;
   color: $c-blue;
   background-color: $c-white;
-  svg {
+  &__arrow {
     margin-left: rem(16);
+    stroke: $c-blue;
   }
   &:hover {
     color: $c-blue-light;
-    svg {
-      fill: $c-blue-light;
+    .link__arrow {
+      stroke: $c-blue-light;
     }
   }
 }
