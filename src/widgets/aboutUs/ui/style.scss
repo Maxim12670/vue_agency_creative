@@ -1,0 +1,141 @@
+@import '@shared/styles/index';
+
+.about-us {
+  padding-top: rem(92);
+  &__subtitle {
+    display: flex;
+    justify-content: center;
+    color: $c-blue;
+    font-family: $f-quicksand;
+    font-size: rem(14);
+    font-weight: 600;
+    letter-spacing: 0.01rem;
+  }
+  &__title {
+    margin-top: rem(10);
+    margin-bottom: rem(35);
+    text-align: center;
+    color: rgb(29, 29, 29);
+    font-family: $f-nunito;
+    font-size: rem(24);
+    font-weight: 700;
+    letter-spacing: 0.03rem;
+  }
+  &__text {
+    margin-bottom: rem(10);
+    color: $c-gray;
+    font-family: $f-quicksand;
+    font-size: rem(14);
+    font-weight: 400;
+    line-height: rem(24);
+    letter-spacing: 0.01rem;
+    text-align: left;
+  }
+  &__wrapp-btn {
+    margin: 0 auto;
+    margin-top: rem(25);
+    width: rem(309);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__btn {
+    width: rem(124);
+    height:rem(38);
+  }
+  &__video {
+    width: rem(150);
+    height: rem(38);
+    position: relative;
+  }
+  &__wrapp-pict {
+    position: relative;
+    margin-top: rem(50);
+    width: rem(340);
+    height: rem(260);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    img {
+      position: absolute;
+      bottom: 0;
+      width: rem(340);
+      height: rem(242);
+      object-fit: fill;
+      z-index: 2;
+    }
+  }
+  &__dotters_top {
+    position: absolute;
+    fill: $c-pink;
+    width: rem(99);
+    height: rem(90);
+    top: rem(-10);
+    left: rem(0);
+    z-index: 1;
+  }
+  &__dotters_bottom {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about-us {
+    padding-top: rem(157);
+    &__subtitle {
+      font-size: rem(14);
+    }
+    &__title {
+      margin-top: rem(20);
+      font-size: rem(24);
+    }
+    &__content {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      margin-top: rem(20);
+    }
+    &__text {
+      width: rem(610);
+      margin-bottom: 0;
+      margin-top: rem(24);
+    }
+    &__wrapp-btn {
+      margin-left: 0;
+      margin-top: rem(24);
+      width: rem(406);
+    }
+    &__btn {
+      width: rem(171);
+      height: rem(48);
+    }
+    &__video {
+      width: rem(210);
+      height: rem(48);
+    }
+    &__wrapp-pict {
+      margin-top: 0;
+      width: rem(633);
+      height: rem(430);
+      img {
+        width: rem(565);
+        height: rem(402);
+      }
+    }
+    &__dotters_top {
+      top: rem(0);
+      fill: $c-orange;
+    }
+    &__dotters_bottom {
+      display: block;
+      position: absolute;
+      z-index: 1;
+      bottom: rem(-25);
+      right: rem(0);
+      fill: $c-pink;
+      width: rem(99);
+      height: rem(90);
+    }
+  }
+}
