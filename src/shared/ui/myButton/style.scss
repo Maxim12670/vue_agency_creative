@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   font-family: $f-quicksand;
-  font-size: rem(2);
+  font-size: rem(14);
   font-weight: 700;
   letter-spacing: 0.01rem;
   color: $c-blue;
@@ -52,5 +52,14 @@
       border: 1px solid $c-blue-light;
       color: $c-white;
     }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .btn {
+    font-size: rem(16);
+  }
+  .link {
+    font-size: rem(20);
   }
 }
