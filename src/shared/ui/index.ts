@@ -5,6 +5,7 @@ import CFormField from './formFields/FormField.vue';
 import MyButton from './myButton/MyButton.vue';
 import ContentContainer from './contentContainer/ContentContainer.vue';
 import SocialNav from './socialNav/ui/SocialNav.vue';
+import SpriteSVG from './spriteSVG/ui/SpriteSVG.vue';
 
 export {
   MainLoader,
@@ -12,5 +13,6 @@ export {
   CFormField,
   MyButton,
   ContentContainer,
-  SocialNav
+  SocialNav,
+  SpriteSVG
 }
