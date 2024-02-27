@@ -9,8 +9,11 @@
   width: 100%;
   padding: rem(33) 0 0 rem(25);
   transition: all 0.3s ease 0s;
+  visibility: hidden;
+  overflow: scroll;
   &.active {
     top: 0;
+    visibility: visible;
   }
   &__list {
     margin-top: rem(60);
