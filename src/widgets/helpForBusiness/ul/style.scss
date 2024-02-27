@@ -1,0 +1,144 @@
+@import '@shared/styles/index';
+
+.helper {
+  padding-top: rem(69);
+  &__title {
+    text-align: center;
+    color: $c-black;
+    font-family: $f-nunito;
+    font-size: rem(28);
+    font-weight: 800;
+    line-height: rem(38);
+    letter-spacing: 0.01rem;
+  }
+  &__text {
+    margin-top: rem(20);
+    text-align: center;
+    color: $c-gray;
+    font-family: $f-nunito;
+    font-size: rem(14);
+    font-weight: 400;
+    line-height: rem(24);
+    letter-spacing: 0.01rem;
+  }
+  &__btn {
+    margin: 0 auto;
+    margin-top: rem(20);
+    width: rem(146);
+    height: rem(38);
+  }
+  &__wrapper {
+    width: rem(350);
+    margin-top: rem(47);
+    position: relative;
+  }
+  &__pictures {
+    width: 100%;
+    position: relative;
+  }
+  &__rating {
+    position: absolute;
+    top: rem(-1)0;
+    left: rem(40);
+    z-index: 2;
+    width: rem(99);
+    height: rem(53);
+    border-radius: 6px;
+    box-shadow: 0px 3.86px 11.57px 0px rgba(0, 0, 0, 0.15);
+  }
+  &__picture {
+    position: relative;
+    width: rem(330);
+    height: rem(224);
+    margin: 0 auto;
+    object-fit: fill;
+    z-index: 1;
+  }
+  &__comment{
+    position: absolute;
+    z-index: 2;
+    bottom: rem(-20);
+    right: rem(30);
+    width: rem(80);
+    height: rem(80);
+    border-radius: 6px;
+    box-shadow: 0px 3.86px 11.57px 0px rgba(0, 0, 0, 0.15);
+  }
+  &__dot_top {
+    fill: $c-orange;
+    width: rem(99);
+    height: rem(71);
+    position: absolute;
+    top: rem(-15);
+    right: rem(40);
+  }
+  &__dot_bottom {
+    fill: $c-blue;
+    width: rem(99);
+    height: rem(71);
+    position: absolute;
+    bottom: rem(-15);
+    left: rem(40);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .helper {
+    margin-top: rem(68);
+    &__title {
+      font-size: rem(64);
+      width: rem(749);
+      line-height: rem(87);
+      margin: 0 auto;
+    }
+    &__text {
+      margin: 0 auto;
+      margin-top: rem(24);
+      font-size: rem(20);
+      line-height: 150%;
+      width: rem(747);
+      opacity: 0.6;
+    }
+    &__btn {
+      margin-top: rem(32);
+      width: rem(201);
+      height: rem(48);
+    }
+    &__wrapper {
+      margin: 0 auto;
+      margin-top: rem(80);
+      width: rem(985);
+    }
+    &__pictures {
+      margin: 0 auto;
+      width: rem(739);
+      height: rem(520);
+    }
+    &__rating {
+      width: rem(175);
+      height:rem(95);
+      top: rem(30);
+      left: rem(-130);
+    }
+    &__picture {
+      width: rem(739);
+      height: rem(501);
+    }
+    &__comment {
+      width: rem(166);
+      height: rem(166);
+      bottom: rem(15);
+      right: rem(-110);
+    }
+    &__dot_top {
+      top: rem(440);
+      right: rem(600);
+    }
+    &__dot_bottom {
+      top: rem(-10);
+      left: rem(200);
+    }
+  }
+}
+
+
