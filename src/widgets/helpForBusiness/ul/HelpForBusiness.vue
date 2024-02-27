@@ -1,7 +1,10 @@
 <template>
   <section class="helper">
+    <div class="bubbles-container">
+      <!-- -->
+    </div>
     <content-container>
-      <SpriteSVG/>
+      <SpriteSVG />
       <h2 class="helper__title">
         {{ $t('helper.title') }}
       </h2>
@@ -9,7 +12,7 @@
         {{ $t('helper.text') }}
       </div>
       <div class="helper__btn">
-        <my-button :text="$t('helper.btn')" :isShaded="true"/>
+        <my-button :text="$t('helper.btn')" :isShaded="true" />
       </div>
       <div class="helper__wrapper">
         <svg class="helper__dot_top">
@@ -30,7 +33,44 @@
 
 <script setup lang="ts">
 import { ContentContainer, MyButton, SpriteSVG } from '@shared/ui';
+import { onMounted } from 'vue';
 import './style.scss';
 
+function createBubble() {
+  const bubble: HTMLDivElement = document.createElement('div');
+  bubble.classList.add('bubble');
 
+  bubble.style.backgroundColor = 'red';
+  bubble.style.left = `${Math.random() * 100}%`;
+  bubble.style.right = `${Math.random() * 100}%`;
+  bubble.style.top = `${Math.random() * 100}%`;
+  bubble.style.bottom = `${Math.random() * 100}%`;
+  document.querySelector('.bubbles-container')?.appendChild(bubble);
+
+  return bubble;
+}
+
+function createBubbles(count: number) {
+  const arrayPoints = [];
+  for (let i = 0; i < count; i++) {
+    arrayPoints.push(createBubble());
+  }
+  return arrayPoints
+}
+
+function movePoint(item: HTMLElement): void {
+  item.style.left = `${Math.random() * 100}%`;
+  item.style.right = `${Math.random() * 100}%`;
+  item.style.top = `${Math.random() * 100}%`;
+  item.style.bottom = `${Math.random() * 100}%`;
+}
+
+onMounted(() => {
+  const arrayPoints = createBubbles(10);
+  setInterval(() => {
+    arrayPoints.forEach(point => {
+      movePoint(point)
+    })
+  }, 2000);
+})
 </script>
