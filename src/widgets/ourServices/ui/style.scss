@@ -1,0 +1,122 @@
+@import '@shared/styles/index';
+
+.services {
+  padding-top: rem(99);
+  &__subtitle {
+    display: flex;
+    justify-content: center;
+    color: $c-blue;
+    font-family: $f-quicksand;
+    font-size: rem(14);
+    font-weight: 600;
+    letter-spacing: 0.01rem;
+  }
+  &__title {
+    text-align: center;
+    margin-top: rem(10);
+    color: $c-black;
+    font-family: $f-nunito;
+    font-size: rem(24);
+    font-weight: 700;
+    letter-spacing: 0.03rem;
+  }
+  &__text {
+    margin-top: rem(34);
+    color: rgb(70, 70, 70);
+    font-family: $f-quicksand;
+    font-size: rem(14);
+    font-weight: 400;
+    line-height: rem(24);
+    letter-spacing: 0.01rem;
+    text-align: center;
+  }
+  &__link {
+    width: rem(130);
+    height: rem(24);
+    margin-top: rem(4);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: rem(262);
+  height: rem(269);
+  margin: rem(23) 0 rem(12);
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: rem(30);
+  &:hover {
+    box-shadow: rem(4) rem(4) rem(30) 0 rgba(0, 0, 0, 0.1);
+  }
+  &__icon {
+    width: rem(100);
+    height: rem(100);
+  }
+
+  &__title {
+    margin-top: rem(27);
+    text-align: center;
+    color: $c-black;
+    font-family: $f-quicksand;
+    font-size: rem(16);
+    width: rem(110);
+    font-weight: 700;
+    line-height: rem(24);
+    letter-spacing: 0.01rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .services {
+    padding-top: rem(150);
+    &__wrapp {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__container {
+      width: rem(520);
+    }
+    &__subtitle {
+      font-size: rem(24);
+      justify-content: left;
+    }
+    &__title {
+      text-align: left;
+      margin-top: rem(32);
+      font-size: rem(55);
+      line-height: 130%;
+    }
+    &__text {
+      text-align: left;
+      font-size: rem(20);
+      margin-top: rem(18);
+      line-height: rem(32);
+    }
+    &__list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: rem(565);
+    }
+    &__link {
+      margin-top: rem(36);
+      width: rem(150);
+      display: block;
+      margin-left: 65%;
+
+    }
+  }
+  .card {
+    margin: 0 0 rem(38) 0;
+  }
+}
