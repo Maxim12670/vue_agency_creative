@@ -21,6 +21,18 @@
     "textFirst": "We move with make a Creative Strategy for help your business goal, we help to improve your income by a services we have. make your content look interesting and make people look for your business2.",
     "textSecond": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu neque tempor at ut auctor maecenas,Lorem ipsum d.",
     "btnFirst": "About Us",
-    "btnSecond": "About Us"
+    "btnSecond": "Our Story"
+  },
+  "services": {
+    "subtitle": "Our Services",
+    "title": "Perfect and Fast Movement",
+    "text": "We move with make a Creative Strategy for help your business goal, we help to improve your income by a services we have. make your content look interesting and make people look for your business",
+    "btn": "Read more",
+    "cards": {
+      "social": "Social Media Management",
+      "optimization": "Search Engine Optimization",
+      "design": "Design",
+      "ads": "Ads"
+    }
   }
 }
