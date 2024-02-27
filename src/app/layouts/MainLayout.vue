@@ -21,26 +21,25 @@ import { HelpForBusiness } from '@widgets/helpForBusiness';
 import { AboutUs } from '@widgets/aboutUs';
 import { OurServices } from '@widgets/ourServices';
 
-// document.addEventListener('DOMContentLoaded', () => {
-//   const onEntry = (entries: IntersectionObserverEntry[]) => {
-//     entries.forEach(entry => {
-//       if (entry.isIntersecting) {
-//         entry.target.classList.add('show');
-//       }
-//     });
-//   };
+document.addEventListener('DOMContentLoaded', () => {
+  const onEntry = (entries: IntersectionObserverEntry[]) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  };
 
-//   const options: IntersectionObserverInit = {
-//     threshold: [0.4]
-//   };
+  const options: IntersectionObserverInit = {
+    threshold: [0.5]
+  };
 
-//   const observer = new IntersectionObserver(onEntry, options);
-//   const elements = document.querySelectorAll<HTMLElement>('.section-animation');
-//   console.log(elements.length)
+  const observer = new IntersectionObserver(onEntry, options);
+  const elements = document.querySelectorAll<HTMLElement>('.section-animation');
 
-//   elements.forEach(element => {
-//     observer.observe(element);
-//   });
-// });
+  elements.forEach(element => {
+    observer.observe(element);
+  });
+});
 </script>
 
