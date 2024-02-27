@@ -19,7 +19,7 @@
 
         <div class="services__list">
           <div class="card" v-for="card in cards" :key="card.textLocaleKey">
-            <img class="card__icon" src="@shared/assets/icons/ourServices/media-icon.svg" alt="logo">
+            <img class="card__icon" :src="card.srcImg" alt="logo">
             <h2 class="card__title">
               {{ $t(card.textLocaleKey) }}
             </h2>
