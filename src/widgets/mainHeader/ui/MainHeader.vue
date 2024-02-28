@@ -20,5 +20,6 @@ import { ContentContainer} from '@shared/ui';
 import { NavMenu } from '@widgets/navMenu/index';
 import { ref } from 'vue';
 
+
 const isActive = ref<boolean>(false);
 </script>

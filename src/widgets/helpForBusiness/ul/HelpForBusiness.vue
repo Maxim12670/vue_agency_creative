@@ -12,7 +12,7 @@
         {{ $t('helper.text') }}
       </div>
       <div class="helper__btn">
-        <my-button :text="$t('helper.btn')" :isShaded="true" />
+        <my-button :text="$t('helper.btn')" :isShaded="true" @click="updateModalValue"/>
       </div>
       <div class="helper__wrapper">
         <svg class="helper__dot_top">
@@ -33,7 +33,7 @@
 
 <script setup lang="ts">
 import { ContentContainer, MyButton, SpriteSVG } from '@shared/ui';
-import { onMounted } from 'vue';
+import { onMounted, inject } from 'vue';
 import './style.scss';
 
 function createBubble() {
@@ -64,6 +64,8 @@ function movePoint(item: HTMLElement): void {
   item.style.top = `${Math.random() * 100}%`;
   item.style.bottom = `${Math.random() * 100}%`;
 }
+
+const {updateModalValue} = inject<any>('modal');
 
 onMounted(() => {
   const arrayPoints = createBubbles(10);

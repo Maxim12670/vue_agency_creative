@@ -9,7 +9,7 @@
       <ButtonLang/>
     </div>
     <div class="nav-menu__message-btn">
-      <MyButton class="btn_fz16" text="Contact us"/>
+      <MyButton @click="updateModalValue" class="btn_fz16" text="Contact us"/>
     </div>
     <div class="nav-menu__social-btn">
       <SocialNav/>
@@ -21,10 +21,13 @@
 import './style.scss';
 import { ButtonLang } from '@widgets/buttonLang/index';
 import { MyButton, SocialNav } from '@shared/ui';
+import { inject } from 'vue';
 
 const props = defineProps<{
   isActive: boolean
 }>();
+
+const { updateModalValue } = inject<any>('modal');
 
 const links = ([
   {
