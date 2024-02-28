@@ -34,5 +34,16 @@
       "design": "Дизайн",
       "ads": "Реклама"
     }
+  },
+  "portfolio": {
+    "subtitle": "Портфолио",
+    "title": "Что мы делаем",
+    "text": "многолетний опыт позволяет нам достигать максимальной эффективности, а результаты проектов говорят сами за себя",
+    "cardTitle": {
+      "furniture": "Design Furniture App",
+      "cloud": "Cloud App",
+      "byte": "Design Byte App"
+    },
+    "btn": "Все проекты"
   }
 }

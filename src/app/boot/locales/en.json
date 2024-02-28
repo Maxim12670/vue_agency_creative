@@ -34,5 +34,16 @@
       "design": "Design",
       "ads": "Ads"
     }
+  },
+  "portfolio": {
+    "subtitle": "Our Portfolio",
+    "title": "What do we do",
+    "text": "all projects that we have already done , proven can help to use more comfortable, then can used by client from our business",
+    "cardTitle": {
+      "furniture": "Design Furniture App",
+      "cloud": "Cloud App",
+      "byte": "Design Byte App"
+    },
+    "btn": "See All Portfolio"
   }
 }
