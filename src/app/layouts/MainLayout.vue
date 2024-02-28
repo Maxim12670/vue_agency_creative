@@ -15,6 +15,9 @@
       <div class="section-animation show">
         <OurPortfolio/>
       </div>
+      <div class="section-animation show">
+        <OurTestimonial/>
+      </div>
     </q-page-container>
   </q-layout>
 </template>
@@ -26,6 +29,7 @@ import { HelpForBusiness } from '@widgets/helpForBusiness';
 import { AboutUs } from '@widgets/aboutUs';
 import { OurServices } from '@widgets/ourServices';
 import { OurPortfolio } from '@widgets/ourPortfolio';
+import { OurTestimonial } from '@widgets/testimonial';
 import { ModalWindow } from '@widgets/modalWindow';
 
 const isModal = ref<boolean>(false);

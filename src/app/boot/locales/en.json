@@ -45,5 +45,14 @@
       "byte": "Design Byte App"
     },
     "btn": "See All Portfolio"
+  },
+  "testimonial": {
+    "subtitle": "Testimonial",
+    "title": "People Talk about us",
+    "slide": {
+      "name": "Angel Rose",
+      "role": "Creative Manager",
+      "comment": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor sit amet, consectetur adipiscing elit”"
+    }
   }
 }

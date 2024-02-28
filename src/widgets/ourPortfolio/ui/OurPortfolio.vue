@@ -38,17 +38,14 @@ const cards = [
   {
     textLocalKey: 'portfolio.cardTitle.furniture',
     srcPict: 'portfolio-pict-1.jpeg'
-    // srcPict: "url('@shared/assets/image/portfolio/portfolio-pict-1.jpeg') center center/cover no-repeat"
   },
   {
     textLocalKey: 'portfolio.cardTitle.cloud',
     srcPict: 'portfolio-pict-2.jpeg'
-    // srcPict: "url('@shared/assets/image/portfolio/portfolio-pict-2.jpeg') center center/cover no-repeat"
   },
   {
     textLocalKey: 'portfolio.cardTitle.byte',
     srcPict: 'portfolio-pict-3.jpeg'
-    // srcPict: "url('@shared/assets/image/portfolio/portfolio-pict-3.jpeg') center center/cover no-repeat"
   }
 ]
 </script>
