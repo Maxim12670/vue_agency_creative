@@ -22,14 +22,6 @@
       <div class="portfolio__btn">
         <my-button :text="$t('portfolio.btn')"/>
       </div>
-      <!-- <div class="portfolio__list">
-        <div class="portfolio__card" v-for="card in cards" :key="card.textLocalKey">
-          <img :src="getImgUrl(card.srcPict)" alt="picture">
-          <h2 class="portfolio__card-title">
-            {{ $t(card.textLocalKey) }}
-          </h2>
-        </div>
-      </div>-->
     </content-container>
   </section>
 </template>

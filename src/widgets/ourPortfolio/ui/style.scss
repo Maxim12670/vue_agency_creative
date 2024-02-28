@@ -87,11 +87,16 @@
     &__list {
       flex-direction: row;
       justify-content: space-between;
+      margin-top: rem(48);
     }
 
     &__card {
       width: rem(350);
       height: rem(350);
+      margin: 0;
+    }
+    &__btn {
+      margin-top: rem(34);
     }
   }
 }
