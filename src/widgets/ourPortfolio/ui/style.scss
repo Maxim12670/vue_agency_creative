@@ -45,6 +45,10 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    &_current {
+      width: rem(340);
+      height: rem(340);
+    }
     &-title { 
       margin-bottom: 0;
       color: $c-white;
@@ -94,6 +98,10 @@
       width: rem(350);
       height: rem(350);
       margin: 0;
+      &_current {
+        width: rem(400);
+        height: rem(400);
+      }
     }
     &__btn {
       margin-top: rem(34);

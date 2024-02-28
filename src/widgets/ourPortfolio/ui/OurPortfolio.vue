@@ -13,7 +13,7 @@
         </div>
       </div>
       <div class="portfolio__list">
-        <div class="portfolio__card" v-for="card in cards" :key="card.textLocalKey" :style="{ background: `url(${getImgUrl(card.srcPict)}) center center/cover no-repeat`}">
+        <div :class="card.isCurrent ? 'portfolio__card portfolio__card_current' : 'portfolio__card'" v-for="card in cards" :key="card.textLocalKey" :style="{ background: `url(${getImgUrl(card.srcPict)}) center center/cover no-repeat`}">
           <h2 class="portfolio__card-title">
             {{ $t(card.textLocalKey) }}
           </h2>
@@ -37,15 +37,18 @@ function getImgUrl(pic: string) {
 const cards = [
   {
     textLocalKey: 'portfolio.cardTitle.furniture',
-    srcPict: 'portfolio-pict-1.jpeg'
+    srcPict: 'portfolio-pict-1.jpeg',
+    isCurrent: false
   },
   {
     textLocalKey: 'portfolio.cardTitle.cloud',
-    srcPict: 'portfolio-pict-2.jpeg'
+    srcPict: 'portfolio-pict-2.jpeg',
+    isCurrent: true
   },
   {
     textLocalKey: 'portfolio.cardTitle.byte',
-    srcPict: 'portfolio-pict-3.jpeg'
+    srcPict: 'portfolio-pict-3.jpeg',
+    isCurrent: false
   }
 ]
 </script>
