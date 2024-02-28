@@ -54,5 +54,10 @@
       "role": "Creative Manager",
       "comment": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor sit amet, consectetur adipiscing elit”"
     }
+  },
+  "collaboration": {
+    "title": "Interesting Collaboration With Us?",
+    "text": "Help you to reach your business goal",
+    "btn": "Get Started"
   }
 }
