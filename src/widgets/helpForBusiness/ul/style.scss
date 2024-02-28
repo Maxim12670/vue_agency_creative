@@ -21,8 +21,7 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: auto;
-
+  min-height: rem(660);
 
   padding-top: rem(69);
   &__title {
@@ -108,6 +107,7 @@
 @media screen and (min-width: 1440px) {
   .helper {
     margin-top: rem(68);
+    height: auto;
     &__title {
       font-size: rem(64);
       width: rem(749);
