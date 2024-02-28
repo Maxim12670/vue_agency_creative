@@ -6,7 +6,7 @@
   width: rem(340);
 }
 
-@media screen and (min-width: 1440px) {
+@media (min-width: 1440px) {
   .container {
     width: rem(1240);
   }

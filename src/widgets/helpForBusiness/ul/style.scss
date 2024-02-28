@@ -12,7 +12,7 @@
   height: rem(20);
   width: rem(20);
   border-radius: 100%;
-  position: relative;
+  position: absolute;
   transition: all 15s ease;
   z-index: -1;
 }
@@ -104,7 +104,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media (min-width: 1440px) {
   .helper {
     margin-top: rem(68);
     height: auto;

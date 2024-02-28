@@ -1,0 +1,31 @@
+@import '@shared/styles/index';
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  
+  &__window {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+  }
+}
+
+@media (min-width: 1440px) {
+  .modal {
+
+    &__window {
+      width: rem(640);
+      height: rem(721);
+      border-radius: rem(30);
+    }
+  }
+}

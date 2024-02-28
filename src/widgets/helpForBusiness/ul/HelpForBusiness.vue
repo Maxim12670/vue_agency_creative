@@ -36,6 +36,8 @@ import { ContentContainer, MyButton, SpriteSVG } from '@shared/ui';
 import { onMounted, inject } from 'vue';
 import './style.scss';
 
+const {updateModalValue} = inject<any>('modal');
+
 function createBubble() {
   const bubble: HTMLDivElement = document.createElement('div');
   bubble.classList.add('bubble');
@@ -64,8 +66,6 @@ function movePoint(item: HTMLElement): void {
   item.style.top = `${Math.random() * 100}%`;
   item.style.bottom = `${Math.random() * 100}%`;
 }
-
-const {updateModalValue} = inject<any>('modal');
 
 onMounted(() => {
   const arrayPoints = createBubbles(10);

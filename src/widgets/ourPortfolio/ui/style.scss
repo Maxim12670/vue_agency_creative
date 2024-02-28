@@ -1,0 +1,97 @@
+@import '@shared/styles/index';
+
+.portfolio {
+  padding-top: rem(63);
+
+  &__subtitle {
+    display: flex;
+    justify-content: center;
+    color: $c-blue;
+    font-family: $f-quicksand;
+    font-size: rem(14);
+    font-weight: 600;
+    letter-spacing: 0.01rem;
+  }
+  &__title {
+    margin-top: rem(10);
+    color: $c-black;
+    font-family: $f-nunito;
+    font-size: rem(24);
+    font-weight: 700;
+    letter-spacing: 0.03rem;
+    text-align: center;
+  }
+  &__text {
+    margin-top: rem(34);
+    color: $c-gray;
+    font-family: $f-quicksand;
+    font-size: rem(14);
+    font-weight: 400;
+    line-height: rem(24);
+    letter-spacing: 0.01rem;
+    text-align: center;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__card {
+    width: rem(300);
+    height: rem(300);
+    margin: rem(34) 0 rem(20);
+    border-radius: rem(30);
+    padding: 0 0 rem(24) rem(24);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    &-title { 
+      margin-bottom: 0;
+      color: $c-white;
+      font-family: $f-quicksand;
+      font-size: rem(24);
+      font-weight: 700;
+      letter-spacing: 0.03rem;
+    }
+  }
+  &__btn {
+    margin: 0 auto;
+    width: rem(196);
+    height: rem(44);
+    margin-top: rem(49);
+   
+  }
+}
+
+@media (min-width: 1440px) {
+  .portfolio {
+    padding-top: rem(130);
+
+    &__content {
+      width: rem(674);
+      margin: 0 auto;
+    }
+
+    &__subtitle {
+      font-size: rem(24);
+    }
+    &__title {
+      font-size: rem(55);
+      margin-top: rem(20);
+    }
+    &__text {
+      font-size: rem(20);
+      margin-top: rem(30);
+    }
+
+    &__list {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__card {
+      width: rem(350);
+      height: rem(350);
+    }
+  }
+}
