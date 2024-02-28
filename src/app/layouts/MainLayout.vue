@@ -18,6 +18,9 @@
       <div class="section-animation show">
         <OurTestimonial/>
       </div>
+      <div class="section-animation show">
+        <CollaborationStart/>
+      </div>
     </q-page-container>
   </q-layout>
 </template>
@@ -30,6 +33,7 @@ import { AboutUs } from '@widgets/aboutUs';
 import { OurServices } from '@widgets/ourServices';
 import { OurPortfolio } from '@widgets/ourPortfolio';
 import { OurTestimonial } from '@widgets/testimonial';
+import { CollaborationStart } from '@widgets/collaborationStart';
 import { ModalWindow } from '@widgets/modalWindow';
 
 const isModal = ref<boolean>(false);
@@ -52,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const options: IntersectionObserverInit = {
-    threshold: [0.5]
+    threshold: [0.1]
   };
 
   const observer = new IntersectionObserver(onEntry, options);
