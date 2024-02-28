@@ -84,11 +84,11 @@
   .about-us {
     padding-top: rem(157);
     &__subtitle {
-      font-size: rem(14);
+      font-size: rem(24);
     }
     &__title {
       margin-top: rem(20);
-      font-size: rem(24);
+      font-size: rem(55);
     }
     &__content {
       display: flex;
@@ -100,6 +100,7 @@
       width: rem(610);
       margin-bottom: 0;
       margin-top: rem(24);
+      font-size: rem(20);
     }
     &__wrapp-btn {
       margin-left: 0;

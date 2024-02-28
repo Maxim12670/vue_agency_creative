@@ -45,6 +45,22 @@
   &__comment {
     margin: 0 auto;
     margin-top: rem(35);
+    font-size: rem(14);
     width: rem(280);
+  }
+}
+
+@media (min-width: 1440px) {
+  .slide {
+    width: rem(380);
+    height: rem(335);
+
+    &__name {
+      font-size: rem(20);
+    }
+    &__comment {
+      font-size: rem(18);
+      margin-left: 0;
+    }
   }
 }

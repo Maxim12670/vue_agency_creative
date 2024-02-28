@@ -1,0 +1,119 @@
+@import '@shared/styles/index';
+
+.collab {
+  padding: rem(50) 0 rem(100);
+
+  &__wrapp {
+    width: rem(340);
+    height: rem(277);
+    position: relative;
+  }
+  &__dotters-bold {
+    display: none;
+  }
+  &__dotters12x4 {
+    display: none;
+  }
+  &__pict_1 {
+    width: rem(221);
+    height: rem(196);
+    border-radius: rem(16);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+  &__pict_2 {
+    width: rem(180);
+    height: rem(177);
+    border-radius: rem(16);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+  }
+  &__title {
+    margin-top: rem(45);
+    color: $c-black;
+    font-family: $f-nunito;
+    font-size: rem(28);
+    font-weight: 700;
+    letter-spacing: 0.03rem;
+    text-align: center;
+  }
+  &__text {
+    margin-top: rem(25);
+    color: $c-gray;
+    font-family: $f-quicksand;
+    font-size: rem(14);
+    font-weight: 400;
+    letter-spacing: 0.01rem;
+    text-align: center;
+  }
+  &__btn {
+    margin: 0 auto;
+    width: rem(140);
+    height: rem(38);
+    margin-top: rem(25);
+  }
+}
+
+@media (min-width: 1440px) {
+  .collab {
+    padding: rem(150) 0 rem(170);
+    &__wrapper {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+    &__wrapp {
+      width: rem(606);
+      height: rem(379);
+    }
+    &__content {
+      width: rem(491);
+    }
+    &__title {
+      margin-top: rem(37);
+      font-size: rem(55);
+      line-height: rem(75);
+      text-align: left;
+    }
+    &__text {
+      font-size: rem(20);
+      margin-top: rem(25);
+      text-align: left;
+    }
+    &__btn {
+      width: rem(193);
+      height: rem(48);
+      margin-top: rem(25);
+      margin-left: 0;
+    }
+    &__dotters-bold {
+      display: block;
+      width: rem(104);
+      height: rem(75);
+      top: rem(50);
+      left: 0;
+      position: absolute;
+    }
+    &__dotters12x4 {
+      display: block;
+      position: absolute;
+      width: rem(196);
+      height: rem(140);
+      bottom: rem(-10);
+      right: rem(105);
+    }
+    &__pict_1{
+      width: rem(325);
+      height: rem(288);
+      left: rem(10);
+    }
+    &__pict_2 {
+      width: rem(294);
+      height: rem(288);
+    }
+  }
+}
