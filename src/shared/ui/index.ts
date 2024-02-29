@@ -6,6 +6,7 @@ import MyButton from './myButton/MyButton.vue';
 import ContentContainer from './contentContainer/ContentContainer.vue';
 import SocialNav from './socialNav/ui/SocialNav.vue';
 import SpriteSVG from './spriteSVG/ui/SpriteSVG.vue';
+import MInput from './formElement/ui/mInput/MInput.vue';
 
 export {
   MainLoader,
@@ -14,5 +15,6 @@ export {
   MyButton,
   ContentContainer,
   SocialNav,
-  SpriteSVG
+  SpriteSVG,
+  MInput
 }

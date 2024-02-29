@@ -1,0 +1,39 @@
+@import '@shared/styles/index';
+
+.form {
+  width: 100%;
+  height: 100%;
+
+  &__input {
+    width: 100%;
+    height: rem(44);
+    margin-top: rem(38);
+  }
+
+  &__btn {
+    margin-top: rem(38);
+    width: 100%;
+    height: rem(44);
+  }
+
+  &__message {
+    margin-top: rem(38);
+    width: 100%;
+    height: rem(188);
+  }
+
+  &__file {
+    margin-top: rem(30);
+    width: 100%;
+    height: rem(24);
+  }
+}
+
+@media (min-width: 1440px) {
+  .form {
+
+   &__message {
+    height: rem(120);
+   }
+  }
+}

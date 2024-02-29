@@ -59,5 +59,9 @@
     "title": "Interesting Collaboration With Us?",
     "text": "Help you to reach your business goal",
     "btn": "Get Started"
+  },
+  "modalWindow": {
+    "title": "Send us a message",
+    "subtitle": "We move with make a Creative Strategy for help your business goal"
   }
 }

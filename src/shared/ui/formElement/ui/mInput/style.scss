@@ -1,0 +1,76 @@
+@import '@shared/styles/index';
+
+.input-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  &__input {
+    width: 100%;
+    height: 100%;
+    border: 1px solid $c-blue;
+    border-radius: rem(24);
+    box-sizing: border-box;
+    padding: rem(10) rem(16);
+    font-family: $f-quicksand;
+    font-size: rem(16);
+    font-weight: 700;
+    letter-spacing: 0.01rem;
+    text-align: left;
+    &:focus {
+      outline: none;
+      border: 1px solid rgb(55, 219, 255)
+    }
+  }
+
+  &__label {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: rem(16);
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+  }
+  &__text {
+    color: $c-blue;
+    font-family: $f-quicksand;
+    font-size: rem(16);
+    font-weight: 700;
+    line-height: rem(24);
+    letter-spacing: 0.01rem;
+    text-align: left;
+  }
+  &__error { 
+    color: $c-red;
+    font-family: $f-quicksand;
+    font-size: rem(12);
+    font-weight: 700;
+    line-height: rem(18);
+    letter-spacing: 0.01rem;
+    padding-left: rem(5);
+  }
+}
+
+.input-container__input:focus + .input-container__label .input-container__text {
+  font-size: 12px;
+  transform: translate(0, -90%);
+  background-color: white;
+  padding-left: 4px;
+  padding-right: 4px;
+  color: rgb(55, 219, 255);
+}
+
+.input-container__label .input-container__text {
+  transition: all 0.15s ease-out;
+}
+
+.input-container__input:focus + .input-container__label .input-container__text,
+.input-container__input:not(:placeholder-shown) .input-container__label .input-container__text {
+  font-size: 12px;
+  transform: translate(0, -90%);
+  background-color: white;
+  padding-left: 4px;
+  padding-right: 4px
+}
+
