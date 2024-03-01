@@ -16,6 +16,12 @@
     box-sizing: border-box;
     cursor: pointer;
   }
+  &__wrap {
+    width: rem(36);
+    height: rem(36);
+    border-radius: 100%;
+    background-color: $c-white;
+  }
   &__logo {
     max-width: rem(20);
     height: 100%;
@@ -24,6 +30,18 @@
     &:hover{
       fill: $c-blue-light;
       stroke: $c-blue-light;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .social {
+    width: rem(360);
+    height: rem(40);
+
+    &__wrap {
+      width: rem(40);
+      height: rem(40);
     }
   }
 }

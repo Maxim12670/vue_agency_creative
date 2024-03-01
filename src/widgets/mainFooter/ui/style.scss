@@ -1,0 +1,117 @@
+@import '@shared/styles/index';
+
+.footer {
+  padding: rem(45) rem(19) rem(60) rem(19);
+  background: $c-dark-gray;
+  
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+  &__logo {
+    width: rem(187);
+    height: rem(88);
+    border-radius: rem(20);
+    background: $c-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: rem(136);
+      object-fit: fill;
+    }
+  }
+  &__text {
+    margin-top: rem(80);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__list {
+    &:nth-child(n+3) {
+      margin-top: rem(45); 
+    }
+  }
+  &__title {
+    color: $c-white;
+    font-family: Quicksand;
+    font-size: rem(18);
+    font-weight: 700;
+  }
+  &__link {
+    color: $c-white;
+    font-family: $f-quicksand;
+    font-size: rem(16);
+    font-weight: 400;
+    cursor: pointer;
+    margin-top: rem(10);
+  }
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top: rem(90);
+
+  }
+  &__line {
+    height: 1px;
+    width: 100vw;
+    background: $c-white;
+    position: absolute;
+    bottom: rem(120);
+  }
+  &__copyright {
+    margin-top: rem(40);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: $f-quicksand;
+    font-size: rem(14);
+    font-weight: 400;
+    letter-spacing: 0rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer {
+    padding: rem(132) rem(103) rem(33);
+
+    &__content {
+      flex-direction: row;
+    }
+
+    &__text {
+      margin-top: 0;
+      margin-left: rem(68);
+      width: rem(979);
+    }
+
+    &__list {
+      &:nth-child(n+3) {
+        margin-top: 0; 
+      }
+    }
+    &__title {
+      font-size: rem(22);
+    }
+    &__link {
+      font-size: rem(18);
+    }
+
+    &__wrap {
+      margin-top: rem(76);
+    }
+
+    &__line {
+      width: rem(500);
+      margin-left: auto;
+      margin-right: auto;
+      left: 0; right: 0;
+      text-align: center;
+      bottom: rem(80);
+    }
+    &__copyright {
+      font-size: rem(18);
+    }
+  }
+}

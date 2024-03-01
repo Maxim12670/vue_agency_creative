@@ -63,5 +63,32 @@
   "modalWindow": {
     "title": "Отправьте нам сообщение",
     "subtitle": "Мы разрабатываем креативную стратегию для достижения целей вашего бизнеса."
+  },
+  "footer": {
+    "titles": {
+      "policies": "Условия",
+      "company": "Компания",
+      "contact": "Контакты",
+      "location": "Адреса"
+    },
+    "policies": {
+      "termsServ": "Условия обслуживания",
+      "policy": "Политика конфиденциальности"
+    },
+    "company": {
+      "home": "Главная",
+      "about": "О нас",
+      "contact": "Написать нам"
+    },
+    "contact": {
+      "tel": "(+62) 893912392190",
+      "mail": "agecnycr@gmail.com"
+    },
+    "location": {
+      "addressFirst": "PT Osiris Real Estate Internasional",
+      "addressSecond": "Jl. KH. Wahid Hasyim Kel No.10D",
+      "addressThird": "Jakarta, Indonesia",
+      "teamMail": "team@OsirisRealEstate.com"
+    }
   }
 }

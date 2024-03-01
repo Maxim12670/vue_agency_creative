@@ -21,6 +21,9 @@
       <div class="section-animation show">
         <CollaborationStart/>
       </div>
+      <div class="section-animation show">
+        <MainFooter/>
+      </div>
     </q-page-container>
   </q-layout>
 </template>
@@ -34,6 +37,7 @@ import { OurServices } from '@widgets/ourServices';
 import { OurPortfolio } from '@widgets/ourPortfolio';
 import { OurTestimonial } from '@widgets/testimonial';
 import { CollaborationStart } from '@widgets/collaborationStart';
+import { MainFooter } from '@widgets/mainFooter';
 import { ModalWindow } from '@widgets/modalWindow';
 
 const isModal = ref<boolean>(false);

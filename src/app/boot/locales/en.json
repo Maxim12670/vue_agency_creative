@@ -63,5 +63,33 @@
   "modalWindow": {
     "title": "Send us a message",
     "subtitle": "We move with make a Creative Strategy for help your business goal"
+  },
+  "footer": {
+    "titles": {
+      "policies": "Terms & policies",
+      "company": "Company",
+      "contact": "Contact",
+      "location": "Location"
+    },
+    "policies": {
+      "termsServ": "Terms of Service",
+      "policy": "Privacy Policy"
+    },
+    "company": {
+      "home": "Home",
+      "about": "About Us",
+      "contact": "Contact Us"
+    },
+    "contact": {
+      "tel": "(+62) 893912392190",
+      "mail": "agecnycr@gmail.com"
+    },
+    "location": {
+      "addressFirst": "PT Osiris Real Estate Internasional",
+      "addressSecond": "Jl. KH. Wahid Hasyim Kel No.10D",
+      "addressThird": "Jakarta, Indonesia",
+      "teamMail": "team@OsirisRealEstate.com"
+    },
+    "copyright": "Copyright @ 2022 Agency Creative. All Right Reserved"
   }
 }

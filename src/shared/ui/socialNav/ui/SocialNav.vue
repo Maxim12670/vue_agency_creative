@@ -51,7 +51,7 @@
 
 
   <div class="social">
-    <a v-for="link in socialLinks" :key="link.name" class="social__link" :href="link.path">
+    <a  :class="{'social__wrap': withCircle}" v-for="link in socialLinks" :key="link.name" class="social__link" :href="link.path">
       <svg class="social__logo">
         <use :xlink:href="'#' + link.name"></use>
       </svg>
@@ -62,5 +62,9 @@
 <script setup lang="ts">
 import './style.scss';
 import { socialLinks } from '../config/socialLinks';
+
+defineProps<{
+  withCircle? : boolean
+}>()
 
 </script>
