@@ -1,27 +1,30 @@
 <template>
+  <div v-if="isLoad" class="load-window">
+    <LoaderWindow/>
+  </div>
   <q-layout view="lHh Lpr lFf">
-    <MainHeaderComponent />
     <q-page-container>
+      <MainHeaderComponent />
       <modalWindow/>
       <div>
         <HelpForBusiness />
       </div>
-      <div class="section-animation show">
+      <div class="section-animation">
         <AboutUs />
       </div>
-      <div class="section-animation show">
+      <div class="section-animation">
         <OurServices/>
       </div>
-      <div class="section-animation show">
+      <div class="section-animation">
         <OurPortfolio/>
       </div>
-      <div class="section-animation show">
+      <div class="section-animation">
         <OurTestimonial/>
       </div>
-      <div class="section-animation show">
+      <div class="section-animation">
         <CollaborationStart/>
       </div>
-      <div class="section-animation show">
+      <div class="section-animation">
         <MainFooter/>
       </div>
     </q-page-container>
@@ -29,7 +32,7 @@
 </template>
 <script setup lang="ts">
 import './style.scss';
-import {ref, provide} from 'vue';
+import {ref, provide, onMounted} from 'vue';
 import { MainHeaderComponent } from '@widgets/mainHeader';
 import { HelpForBusiness } from '@widgets/helpForBusiness';
 import { AboutUs } from '@widgets/aboutUs';
@@ -39,6 +42,19 @@ import { OurTestimonial } from '@widgets/testimonial';
 import { CollaborationStart } from '@widgets/collaborationStart';
 import { MainFooter } from '@widgets/mainFooter';
 import { ModalWindow } from '@widgets/modalWindow';
+import { LoaderWindow } from '@widgets/loaderWindow';
+
+const isLoad = ref<boolean>(true);
+
+onMounted(() => {
+  setTimeout(() => {
+    isLoad.value = false
+  }, 7000)
+})
+
+
+
+
 
 const isModal = ref<boolean>(false);
 const updateModalValue = () => {

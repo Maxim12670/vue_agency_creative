@@ -1,0 +1,178 @@
+@import '@shared/styles/index';
+
+.welcome {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  &__content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+    animation: endShow 1.2s ease 6s forwards
+  }
+  &__logo {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+    display: block; 
+    animation: step1 2.5s ease forwards;
+    background-color: $c-white;
+    z-index: 9;
+  }
+  &__label {
+    position: absolute;
+    display: block;
+    visibility: hidden;
+    height: rem(100);
+    width: rem(250);
+    top: 0; bottom: 0;
+    left: -370px; right: 0;
+    margin: auto;
+    animation: step2 1s ease 2.5s forwards;
+  }
+  &__agency {
+    color: $c-black;
+    font-family: $f-quicksand;
+    font-size: rem(70);
+    font-weight: 700;
+  }
+  &__creat {
+    color: $c-black;
+    margin-top: rem(20);
+    font-family: $f-quicksand;
+    font-size: rem(56);
+    font-weight: 400;
+  }
+  &__dott {
+    position: absolute;
+    margin: auto;
+    visibility: hidden;
+    width: rem(31);
+    height: rem(31);
+    border-radius: 100%;
+    opacity: 0.5;
+    z-index: 1;
+    &_red {
+      background-color: $c-red;
+    }
+    &_blue {
+      background-color: $c-blue;
+    }
+    &_lb {
+      left: 0; right: rem(300); bottom: 0; top: rem(145);
+      animation: stepDott1 1.5s ease 3.5s forwards;
+    }
+    &_lt {
+      left: rem(-440); right: 0; bottom: 0; top: 0;
+      animation: stepDott2 1.5s ease 3.5s forwards;
+    }
+    &_rt {
+      left: 0; right: rem(-460); bottom: 0; top: rem(-50);
+      animation: stepDott3 1.5s ease 3.5s forwards;
+    }
+    &_rb {
+      left: 0; right: rem(-100); bottom: rem(-100); top: 0;
+      animation: stepDott4 1.5s ease 3.5s forwards;
+    }
+  }
+  &__wrap {
+    display: flex;
+    flex-direction: row;
+    width: rem(421);
+    height: rem(40);
+    z-index: 999;
+    position: absolute;
+    top: rem(300); left: 0; right: 0; bottom: 0;
+    margin: auto;
+  }
+  &__subtitle {
+    overflow: hidden;
+    width: 0%;
+    white-space: nowrap;
+    color: $c-gray;
+    font-family: $f-quicksand;
+    font-size: rem(32);
+    font-weight: 400;
+    letter-spacing: 0.01rem;
+    animation: printed-text 1.2s steps(30) 4.7s forwards
+  }
+}
+
+@keyframes step1 {
+  0% {
+    width: rem(0);
+  }
+  50% {
+    width: rem(340);
+  }
+  75% {
+    width: rem(187);
+    left: 0;
+  }
+  100% {
+    width: rem(187);
+    left: rem(-300);
+  }
+}
+
+@keyframes step2 {
+  0% {
+    width: 0; 
+  }
+  100% {
+    left: 250px;
+    visibility: visible;
+  }
+}
+
+@keyframes stepDott1 {
+  100% {
+    left: 0; right: rem(900); bottom: 0; top: rem(600);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes stepDott2 {
+  100% {
+    left: rem(-1300); right: 0; bottom: 0; top: rem(-100);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes stepDott3 {
+  100% {
+    left: 0; right: rem(-1000); bottom: 0; top: rem(-600);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes stepDott4 {
+  100% {
+    left: 0; right: rem(-430); bottom: rem(-500); top: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes printed-text {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 30ch;
+  }
+}
+
+@keyframes endShow {
+  100% {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}
