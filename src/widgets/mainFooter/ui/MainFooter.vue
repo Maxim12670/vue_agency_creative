@@ -48,19 +48,4 @@ const localKeyForTitle = [
 
 console.log(localKeyForTitle[0].items)
 
-// const localKeyForLink = [
-//   {
-//     items: ['footer.policies.termsServ', 'footer.policies.policy']
-//   },
-//   {
-//     items: ['footer.company.home', 'footer.company.about', 'footer.company.contact']
-//   },
-//   {
-//     items: ['footer.contact.tel', 'footer.contact.mail']
-//   },
-//   {
-//     items: ['footer.location.addressFirst', 'footer.location.addressSecond', 'footer.location.addressThird', 'footer.location.teamMail']
-//   }
-// ]
-
 </script>
