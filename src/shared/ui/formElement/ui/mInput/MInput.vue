@@ -21,7 +21,7 @@
 import './style.scss';
 
 const emit = defineEmits(['update:value']);
-const props = defineProps({
+defineProps({
   error: {
     type: Array,
     required: false

@@ -5,7 +5,7 @@
 <script setup lang="ts">
 import './style.scss';
 
-const props = defineProps({
+defineProps({
   placeholder: {
     type: String,
     required: false

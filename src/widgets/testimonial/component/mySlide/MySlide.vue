@@ -18,7 +18,6 @@
 </template>
 
 <script lang="ts" setup>
-import { I18n } from 'vue-i18n';
 import './style.scss';
 
 </script>
