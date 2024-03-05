@@ -1,0 +1,38 @@
+.title {
+  color: rgb(29, 29, 29);
+  font-family: $f-nunito;
+  font-size: rem(24);
+  font-weight: 700;
+  letter-spacing: 0.03rem;
+}
+
+.subtitle {
+  color: $c-blue;
+  font-family: $f-quicksand;
+  font-size: rem(14);
+  font-weight: 600;
+  letter-spacing: 0.01rem;
+}
+
+.text {
+  color: $c-gray;
+  font-family: $f-quicksand;
+  font-size: rem(14);
+  font-weight: 400;
+  line-height: rem(24);
+  letter-spacing: 0.01rem;
+}
+
+@media (min-width: 1440px) {
+  .title {
+    font-size: rem(55);
+  }
+
+  .subtitle {
+    font-size: rem(24);
+  }
+
+  .text {
+    font-size: rem(20);
+  }
+}

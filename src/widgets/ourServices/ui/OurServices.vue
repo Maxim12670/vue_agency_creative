@@ -4,13 +4,13 @@
     <content-container>
       <div class="services__wrapp">
         <div class="services__container">
-          <span class="services__subtitle">
+          <span class="services__subtitle subtitle">
             {{ $t('services.subtitle') }}
           </span>
-          <h2 class="services__title">
+          <h2 class="services__title title">
             {{ $t('services.title') }}
           </h2>
-          <div class="services__text">
+          <div class="services__text text">
             {{ $t('services.text') }}
           </div>
           <div class="services__link">

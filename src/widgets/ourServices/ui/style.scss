@@ -5,29 +5,13 @@
   &__subtitle {
     display: flex;
     justify-content: center;
-    color: $c-blue;
-    font-family: $f-quicksand;
-    font-size: rem(14);
-    font-weight: 600;
-    letter-spacing: 0.01rem;
   }
   &__title {
     text-align: center;
     margin-top: rem(10);
-    color: $c-black;
-    font-family: $f-nunito;
-    font-size: rem(24);
-    font-weight: 700;
-    letter-spacing: 0.03rem;
   }
   &__text {
     margin-top: rem(34);
-    color: rgb(70, 70, 70);
-    font-family: $f-quicksand;
-    font-size: rem(14);
-    font-weight: 400;
-    line-height: rem(24);
-    letter-spacing: 0.01rem;
     text-align: center;
   }
   &__link {
@@ -87,20 +71,15 @@
       width: rem(520);
     }
     &__subtitle {
-      font-size: rem(24);
       justify-content: left;
     }
     &__title {
       text-align: left;
       margin-top: rem(32);
-      font-size: rem(55);
-      line-height: 130%;
     }
     &__text {
       text-align: left;
-      font-size: rem(20);
       margin-top: rem(18);
-      line-height: rem(32);
     }
     &__list {
       flex-direction: row;

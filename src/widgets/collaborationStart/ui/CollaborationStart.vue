@@ -14,10 +14,10 @@
           </svg>
         </div>
         <div class="collab__content">
-          <h2 class="collab__title">
+          <h2 class="collab__title title">
             {{ $t('collaboration.title') }}
           </h2>
-          <div class="collab__text">
+          <div class="collab__text text">
             {{ $t('collaboration.text') }}
           </div>
           <div class="collab__btn">

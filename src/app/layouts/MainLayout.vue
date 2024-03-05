@@ -44,7 +44,7 @@ import { MainFooter } from '@widgets/mainFooter';
 import { ModalWindow } from '@widgets/modalWindow';
 import { LoaderWindow } from '@widgets/loaderWindow';
 
-const isLoad = ref<boolean>(true);
+const isLoad = ref<boolean>(false);
 
 onMounted(() => {
   setTimeout(() => {

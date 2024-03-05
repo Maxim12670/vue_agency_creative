@@ -2,20 +2,20 @@
   <section class="about-us">
     <content-container>
       <SpriteSVG />
-      <span class="about-us__subtitle">
+      <span class="about-us__subtitle subtitle">
         {{ $t('about-us.subtitle') }}
       </span>
-      <h2 class="about-us__title">
+      <h2 class="about-us__title title">
         {{ $t('about-us.title') }}
       </h2>
 
       <div class="about-us__content">
 
         <div>
-          <div class="about-us__text">
+          <div class="about-us__text text">
             {{ $t('about-us.textFirst') }}
           </div>
-          <div class="about-us__text">
+          <div class="about-us__text text">
             {{ $t('about-us.textSecond') }}
           </div>
 

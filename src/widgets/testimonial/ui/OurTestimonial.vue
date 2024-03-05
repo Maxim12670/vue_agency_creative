@@ -1,10 +1,10 @@
 <template>
   <section class="testimonial">
     <content-container>
-      <span class="testimonial__subtitle">
+      <span class="testimonial__subtitle subtitle">
         {{ $t('testimonial.subtitle') }}
       </span>
-      <h2 class="testimonial__title">
+      <h2 class="testimonial__title title">
         {{ $t('testimonial.title') }}
       </h2>
 

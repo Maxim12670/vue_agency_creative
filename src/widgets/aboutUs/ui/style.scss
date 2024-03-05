@@ -5,30 +5,15 @@
   &__subtitle {
     display: flex;
     justify-content: center;
-    color: $c-blue;
-    font-family: $f-quicksand;
-    font-size: rem(14);
-    font-weight: 600;
-    letter-spacing: 0.01rem;
   }
   &__title {
     margin-top: rem(10);
     margin-bottom: rem(35);
     text-align: center;
-    color: rgb(29, 29, 29);
-    font-family: $f-nunito;
-    font-size: rem(24);
-    font-weight: 700;
-    letter-spacing: 0.03rem;
+
   }
   &__text {
     margin-bottom: rem(10);
-    color: $c-gray;
-    font-family: $f-quicksand;
-    font-size: rem(14);
-    font-weight: 400;
-    line-height: rem(24);
-    letter-spacing: 0.01rem;
     text-align: left;
   }
   &__wrapp-btn {
@@ -83,12 +68,8 @@
 @media (min-width: 1440px) {
   .about-us {
     padding-top: rem(157);
-    &__subtitle {
-      font-size: rem(24);
-    }
     &__title {
       margin-top: rem(20);
-      font-size: rem(55);
     }
     &__content {
       display: flex;
@@ -100,7 +81,6 @@
       width: rem(610);
       margin-bottom: 0;
       margin-top: rem(24);
-      font-size: rem(20);
     }
     &__wrapp-btn {
       margin-left: 0;
