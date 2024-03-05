@@ -1,11 +1,11 @@
 <template>
   <div v-if="isLoad" class="load-window">
-    <LoaderWindow/>
+    <LoaderWindow />
   </div>
   <q-layout view="lHh Lpr lFf">
     <q-page-container>
       <MainHeaderComponent />
-      <modalWindow/>
+      <modalWindow />
       <div>
         <HelpForBusiness />
       </div>
@@ -13,26 +13,26 @@
         <AboutUs />
       </div>
       <div class="section-animation">
-        <OurServices/>
+        <OurServices />
       </div>
       <div class="section-animation">
-        <OurPortfolio/>
+        <OurPortfolio />
       </div>
       <div class="section-animation">
-        <OurTestimonial/>
+        <OurTestimonial />
       </div>
       <div class="section-animation">
-        <CollaborationStart/>
+        <CollaborationStart />
       </div>
-      <div class="section-animation">
-        <MainFooter/>
-      </div>
+      <MainFooter />
+
     </q-page-container>
   </q-layout>
 </template>
+
 <script setup lang="ts">
 import './style.scss';
-import {ref, provide, onMounted} from 'vue';
+import { ref, provide, onMounted } from 'vue';
 import { MainHeaderComponent } from '@widgets/mainHeader';
 import { HelpForBusiness } from '@widgets/helpForBusiness';
 import { AboutUs } from '@widgets/aboutUs';
@@ -87,4 +87,3 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 </script>
-
