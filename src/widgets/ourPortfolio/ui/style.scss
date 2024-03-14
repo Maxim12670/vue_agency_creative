@@ -2,34 +2,17 @@
 
 .portfolio {
   padding-top: rem(63);
-
+  background-color: var(--main-bg);
   &__subtitle {
     display: flex;
     justify-content: center;
-    color: $c-blue;
-    font-family: $f-quicksand;
-    font-size: rem(14);
-    font-weight: 600;
-    letter-spacing: 0.01rem;
   }
   &__title {
     margin-top: rem(10);
-    color: $c-black;
-    font-family: $f-nunito;
-    font-size: rem(24);
-    font-weight: 700;
-    letter-spacing: 0.03rem;
     text-align: center;
   }
   &__text {
     margin-top: rem(34);
-    color: $c-gray;
-    font-family: $f-quicksand;
-    font-size: rem(14);
-    font-weight: 400;
-    line-height: rem(24);
-    letter-spacing: 0.01rem;
-    text-align: center;
   }
   &__list {
     display: flex;
@@ -75,16 +58,10 @@
       width: rem(674);
       margin: 0 auto;
     }
-
-    &__subtitle {
-      font-size: rem(24);
-    }
     &__title {
-      font-size: rem(55);
       margin-top: rem(30);
     }
     &__text {
-      font-size: rem(20);
       margin-top: rem(40);
     }
 

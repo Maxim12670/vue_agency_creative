@@ -1,8 +1,11 @@
 <template>
   <content-container>
+    <SpriteSVG/>
     <header class="header">
       <router-link to="/">
-        <img class="header__logo" src="@shared/assets/icons/logo.svg" alt="logo">
+        <svg class="header__logo">
+          <use xlink:href="#mainLogo"></use>
+        </svg>
       </router-link>
       <NavMenu class="header__nav-menu" :isActive="isActive" />
       <div class="header__burger" @click="isActive = !isActive">
@@ -16,7 +19,7 @@
 
 <script setup lang="ts">
 import './style.scss';
-import { ContentContainer } from '@shared/ui';
+import { ContentContainer, SpriteSVG } from '@shared/ui';
 import { NavMenu } from '@widgets/navMenu/index';
 import { ref } from 'vue';
 

@@ -6,7 +6,7 @@
   display: flex;
   width: rem(340);
   height: rem(33);
-  background-color: white;
+  background-color: var(--main-bg);
   justify-content: space-between;
   align-items: center;
   z-index: 10;
@@ -15,7 +15,8 @@
     z-index: 2;
     width: rem(91);
     height: rem(33);
-    object-fit: fill;
+    fill: var(--color-title)
+
   }
   &__burger {
     z-index: 2;
@@ -41,7 +42,7 @@
     width: rem(12);
     height: 0.2rem;
     border-radius: rem(25);
-    background-color: black;
+    background-color: var(--color-title);
     transition: all 0.3s ease 0s;
   }
   &::before,
@@ -51,7 +52,7 @@
     width: rem(18);
     height: 0.2rem;
     border-radius: rem(25);
-    background-color: black;
+    background-color: var(--color-title);
     transition: all 0.3s ease 0s;
   }
   &::before {

@@ -5,10 +5,10 @@
     </div>
     <content-container>
       <SpriteSVG />
-      <h2 class="helper__title">
+      <h2 class="helper__title title">
         {{ $t('helper.title') }}
       </h2>
-      <div class="helper__text">
+      <div class="helper__text text">
         {{ $t('helper.text') }}
       </div>
       <div class="helper__btn">

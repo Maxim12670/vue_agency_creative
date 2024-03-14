@@ -53,9 +53,6 @@ onMounted(() => {
 })
 
 
-
-
-
 const isModal = ref<boolean>(false);
 const updateModalValue = () => {
   isModal.value = !isModal.value;

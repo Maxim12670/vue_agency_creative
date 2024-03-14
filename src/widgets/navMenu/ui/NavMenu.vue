@@ -5,6 +5,10 @@
         <a :href="link.path">{{ $t(link.textLocaleKey) }}</a>
       </li>
     </ul>
+
+    <div class="nav-menu__dark-mode">
+      <dark-mode-button/>
+    </div>
     <div class="nav-menu__lang-btn">
       <ButtonLang/>
     </div>
@@ -20,7 +24,7 @@
 <script setup lang="ts">
 import './style.scss';
 import { ButtonLang } from '@widgets/buttonLang/index';
-import { MyButton, SocialNav } from '@shared/ui';
+import { MyButton, SocialNav, DarkModeButton } from '@shared/ui';
 import { inject } from 'vue';
 
 const props = defineProps<{

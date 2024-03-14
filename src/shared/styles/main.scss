@@ -1,13 +1,22 @@
+:root {
+  --color-title: $c-dark-blue;
+  --color-subtitle: $c-blue;
+  --color-text: $c-grey;
+  --main-bg: $c-white;
+}
+
+
 .title {
-  color: rgb(29, 29, 29);
+  color: var(--color-title);
   font-family: $f-nunito;
   font-size: rem(24);
   font-weight: 700;
+  line-height: 130%;
   letter-spacing: 0.03rem;
 }
 
 .subtitle {
-  color: $c-blue;
+  color: var(--color-subtitle);
   font-family: $f-quicksand;
   font-size: rem(14);
   font-weight: 600;
@@ -15,8 +24,9 @@
 }
 
 .text {
-  color: $c-gray;
+  color: var(--color-text);
   font-family: $f-quicksand;
+  opacity: 0.6;
   font-size: rem(14);
   font-weight: 400;
   line-height: rem(24);

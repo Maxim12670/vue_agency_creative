@@ -2,13 +2,13 @@
   <section class="portfolio">
     <content-container>
       <div class="portfolio__content">
-        <span class="portfolio__subtitle">
+        <span class="portfolio__subtitle subtitle">
           {{ $t('portfolio.subtitle') }}
         </span>
-        <h2 class="portfolio__title">
+        <h2 class="portfolio__title title">
           {{ $t('portfolio.title') }}
         </h2>
-        <div class="portfolio__text">
+        <div class="portfolio__text text">
           {{ $t('portfolio.text') }}
         </div>
       </div>

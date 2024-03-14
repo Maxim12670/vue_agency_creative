@@ -1,7 +1,7 @@
 @import '@shared/styles/index';
 
 .nav-menu {
-  background-color: $c-white;
+  background-color: var(--main-bg);
   position: fixed;
   top: -100%;
   left: 0;
@@ -26,11 +26,14 @@
       font-weight: 400;
       letter-spacing: 0.01rem;
       text-transform: capitalize;
-      color: $c-black;
+      color: var(--color-title);
       &:hover {
         font-weight: 700;
       }
     }
+  }
+  &__dark-mode {
+    display: none;
   }
   &__lang-btn {
     padding-top: rem(25);
@@ -44,7 +47,6 @@
     margin-top: rem(189);
     display: flex;
     justify-content: center;
-
   }
 }
 
@@ -75,13 +77,20 @@
         font-size: rem(18);
       }
     }
+    &__dark-mode {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: rem(44);
+      width: rem(70);
+      margin-right: rem(10);
+    }
     &__lang-btn {
       display: flex;
       justify-content: center;
       align-items: center;
       padding-top: 0;
-      margin-right: rem(80);
-      
+      margin-right: rem(50);
     }
     &__message-btn {
       display: flex;

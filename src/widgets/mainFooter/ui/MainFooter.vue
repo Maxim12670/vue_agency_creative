@@ -8,15 +8,13 @@
         <ul class="footer__text">
           <ul class="footer__list" v-for="elem in localKeyForTitle" :key="elem.title">
             <h2 class="footer__title"> {{ $t(elem.title) }} </h2>
-            <li v-for="item in elem.items" :key="item" class="footer__link">
-              {{ $t(item) }}
-            </li>
+            <li v-for="item in elem.items" :key="item" class="footer__link" v-html="$t(item)"></li>
           </ul>
         </ul>
       </div>
       <div class="footer__wrap">
         <social-nav :withCircle="true"/>
-        <div class="footer__copyright">{{ $t('footer.copyright') }}</div>
+        <div class="footer__copyright" v-html="$t('footer.copyright')"></div>
       </div>
     </content-container>
   </section>
@@ -45,7 +43,4 @@ const localKeyForTitle = [
     items: ['footer.location.addressFirst', 'footer.location.addressSecond', 'footer.location.addressThird', 'footer.location.teamMail']
   }
 ]
-
-console.log(localKeyForTitle[0].items)
-
 </script>

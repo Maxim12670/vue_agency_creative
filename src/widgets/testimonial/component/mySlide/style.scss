@@ -35,7 +35,7 @@
   }
 
   &__role {
-    color: $c-gray;
+    color: var(--color-text);
     font-family: $f-quicksand;
     font-size: rem(11);
     font-weight: 400;
@@ -43,6 +43,7 @@
     letter-spacing: 0.01rem;
   }
   &__comment {
+    color: var(--color-title);
     margin: 0 auto;
     margin-top: rem(35);
     font-size: rem(14);

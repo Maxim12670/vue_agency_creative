@@ -7,6 +7,7 @@ import ContentContainer from './contentContainer/ContentContainer.vue';
 import SocialNav from './socialNav/ui/SocialNav.vue';
 import SpriteSVG from './spriteSVG/ui/SpriteSVG.vue';
 import MInput from './formElement/ui/mInput/MInput.vue';
+import DarkModeButton from './darkModeButton/DarkModeButton.vue';
 
 export {
   MainLoader,
@@ -16,5 +17,6 @@ export {
   ContentContainer,
   SocialNav,
   SpriteSVG,
-  MInput
+  MInput,
+  DarkModeButton
 }

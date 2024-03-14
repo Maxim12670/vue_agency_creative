@@ -19,7 +19,6 @@
     <swiper-slide>
       <my-slide/>
     </swiper-slide>
-
   </swiper-container>
 </template>
 
